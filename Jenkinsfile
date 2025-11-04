@@ -21,7 +21,7 @@ pipeline {
             steps {
                 dir('./') { // Ensure the correct directory is used
                     // Manual approval prompt
-                    input message: "Are you sure you want to destroy the resources?", ok: "Yes, Destroy"
+               #    input message: "Are you sure you want to destroy the resources?", ok: "Yes, Destroy"
                     withCredentials([file(credentialsId: 'gcp-svc-acct', variable: 'GOOGLE_CLOUD_KEYFILE_JSON')]) {
                     sh '''
                     export GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_CLOUD_KEYFILE_JSON
