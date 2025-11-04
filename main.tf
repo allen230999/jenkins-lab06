@@ -5,7 +5,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket  = "gs://jenkins-state-allen"  # Replace with the name of your GCS bucket
+    bucket  = "jenkins-state-allen"  # Replace with the name of your GCS bucket
     prefix  = "terraform/state"    # The folder path in the bucket
   }
 }
