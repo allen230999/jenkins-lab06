@@ -1,5 +1,5 @@
 provider "google" {
-  project = "qwiklabs-gcp-00-08d21e28ce36t"  # Replace with your GCP project ID
+  project = "qwiklabs-gcp-00-08d21e28ce36"  # Replace with your GCP project ID
   region  = "us-west1"            # Replace with your desired GCP region
 }
 
